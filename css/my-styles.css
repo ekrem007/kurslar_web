@@ -27,3 +27,17 @@
   background-size: contain;
   filter: invert(50%);
 }
+
+#video-gallery {
+  background-color: #212121;
+}
+
+#video-gallery h3 {
+  color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+  iframe {
+    width: 100%;
+  }
+}

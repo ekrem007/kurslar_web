@@ -1,0 +1,2 @@
+cd /GitHub/kurslar_web
+browser-sync start --server --files "*/*.*"
