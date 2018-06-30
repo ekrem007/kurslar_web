@@ -36,8 +36,37 @@
   color: #fff;
 }
 
-@media screen and (max-width: 480px) {
+.video {
+    float: left;
+    margin: 5px 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+  .video {
+    padding: 0;
+    margin: 5px 7px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
   iframe {
+    width: 283px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .video {
+    padding: 0;
+    margin: 5px 2px;
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  iframe, .video {
     width: 100%;
+    padding: 0;
   }
 }
