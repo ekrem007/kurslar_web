@@ -63,11 +63,11 @@ label {
 .banner-top-w3-agile ul li {
   list-style: none;
   float: left;
-  border-left: 3px solid #fd6900;
+  border-left: 3px solid #ff5722;
 }
 
 .banner-top-w3-agile ul li:nth-child(5) {
-  border-right: 2px solid #fd6900;
+  border-right: 2px solid #ff5722;
 }
 
 .banner-top-w3-agile ul li {
@@ -109,14 +109,14 @@ label {
 /*-- Navbar --*/
 
 .navbar {
-  position: absolute;
+  position: fixed;
   z-index: 99999;
   width: 100%;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, .5);
+  min-height: 0;
   border: none;
   border-radius: 0;
-  margin: 0;
-  bottom: 2em;
+  height: 40px;
 }
 
 .navbar-right {
@@ -226,7 +226,7 @@ label {
 }
 
 .hover-effect li:before, .hover-effect li:after, .hover-effect a:before, .hover-effect a:after {
-  background-color: #fd6900;
+  background-color: #ff5722;
   position: absolute;
   height: 100%;
   width: 26%;
@@ -496,8 +496,7 @@ ul.callbacks_tabs li {
 .layer p {
   font-size: 14px;
   font-weight: 300;
-  color: #f2d701;
-  letter-spacing: 9px;
+  color: #ff5722;
   padding-left: 13%;
   font-weight: 600;
 }
@@ -637,11 +636,11 @@ h1.subheading-agileits-w3layouts {
 
 h1.subheading-agileits-w3layouts span {
   padding: 7px 13px;
-  background: #fd6900;
+  background: #ff5722;
 }
 
 .banner-btm-wthree p {
-  color: #f2d701;
+  color: #ff5722;
   font-size: 16px;
   letter-spacing: 5.5px;
   margin: 1.5em 0 2em;
@@ -658,7 +657,7 @@ h1.subheading-agileits-w3layouts span {
 }
 
 .know-more {
-  background: #f2d701 !important;
+  background: #ff5722 !important;
   color: #fff !important;
 }
 
@@ -754,7 +753,7 @@ h1.subheading-agileits-w3layouts span {
 }
 
 .content-pro-head h3 {
-  color: #fd6900 !important;
+  color: #ff5722 !important;
 }
 
 .banner_bottom_right_grid {
@@ -901,24 +900,24 @@ li.nbs-flexisel-item img {
 /*--//flexisel--*/
 
 .flex-info {
-  background: #2baae6;
+  background: #2196f3;
   padding: 1em;
 }
 
 .flex-info1 {
-  background: rgba(43, 170, 230, 0.9);
+  background: rgba(33, 150, 243, .9);
 }
 
 .flex-info2 {
-  background: rgba(43, 170, 230, 0.8);
+  background: rgba(33, 150, 243, .8);
 }
 
 .flex-info3 {
-  background: rgba(43, 170, 230, 0.7);
+  background: rgba(33, 150, 243, .7);
 }
 
 .flex-info4 {
-  background: rgba(43, 170, 230, 0.6);
+  background: rgba(33, 150, 243, .6);
 }
 
 .flex-info h4 {
@@ -1040,7 +1039,7 @@ li.nbs-flexisel-item img {
 }
 
 .c1 {
-  background: #fd6900;
+  background: #ff5722;
   /* Old browsers */
   background: -moz-linear-gradient(45deg, #06124f 1%, #094baf 100%);
   /* FF3.6-15 */
@@ -1048,12 +1047,12 @@ li.nbs-flexisel-item img {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(45deg, #06124f 1%, #094baf 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd6900', endColorstr='#ff984f', GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5722', endColorstr='#ff984f', GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
 }
 
 .c2 {
-  background: #f2d701;
+  background: #ff5722;
   /* Old browsers */
   background: -moz-linear-gradient(45deg, #3e0507 2%, #e6493b 100%);
   /* FF3.6-15 */
@@ -1061,7 +1060,7 @@ li.nbs-flexisel-item img {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(45deg, #3e0507 2%, #e6493b 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2d701', endColorstr='#ffef71', GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5722', endColorstr='#ffef71', GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
 }
 
@@ -1386,7 +1385,7 @@ li.flex-active-slide p:after {
 }
 
 .w3layouts_gallery_grid1_pos {
-  background: rgba(0, 0, 0, 0.73);
+  background: rgba(255, 255, 255, .75);
   bottom: 45px;
   left: 45px;
   opacity: 0;
@@ -1396,13 +1395,13 @@ li.flex-active-slide p:after {
   text-align: center;
   top: 45px;
   visibility: hidden;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -ms-transform: scaleX(-1);
-  -webkit-transition: all 0.8s ease;
-  transition: all 0.8s ease;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -webkit-transition: .5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  transition: .5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 
 .w3layouts_gallery_grid1_pos h3 {
@@ -1413,12 +1412,12 @@ li.flex-active-slide p:after {
   padding-bottom: .5em;
   position: relative;
   text-transform: capitalize;
-  color: #ffffff;
+  color: #000;
   font-family: 'Poiret One', cursive;
 }
 
 .w3layouts_gallery_grid1_pos h3:after {
-  background: #fd6900;
+  background: #ff5722;
   bottom: -4px;
   content: '';
   height: 2px;
@@ -1437,11 +1436,11 @@ li.flex-active-slide p:after {
 .agile_gallery_grid:hover .w3layouts_gallery_grid1_pos {
   opacity: 1;
   visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-  -moz-transform: scaleX(1);
-  -o-transform: scaleX(1);
-  -ms-transform: scaleX(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
 }
 
 /*-- //Gallery --*/
@@ -1496,7 +1495,7 @@ li.flex-active-slide p:after {
 
 .address-w3-agile i {
   font-size: 23px;
-  color: #00b0ff;
+  color: #fff;
   text-shadow: 1px 1px 7px #004f73;
   float: left;
   padding-right: 10px;
@@ -1662,7 +1661,7 @@ textarea:focus {
 }
 
 .contact-middle input[type="submit"]:hover {
-  background: #f2d701;
+  background: #ff5722;
   transition: .5s ease-in;
   -webkit-transition: .5s ease-in;
   -moz-transition: .5s ease-in;
@@ -1681,7 +1680,7 @@ textarea:focus {
 .contact-w3ls {
   position: relative;
   padding-bottom: 17em !important;
-  background: #f2d701;
+  background: #ff5722;
 }
 
 .contact-map-w3l iframe {
@@ -1738,7 +1737,7 @@ textarea:focus {
 }
 
 .footer-grids ul.footer-news-agileits li a:hover {
-  color: #fd6900;
+  color: #ff5722;
 }
 
 .footer-grids p a {
@@ -1791,7 +1790,7 @@ textarea:focus {
   outline: none;
   padding: 9px 9px;
   border: none;
-  background: #f2d701;
+  background: #ff5722;
   transition: 0.5s all;
   -webkit-transition: 0.5s all;
   -moz-transition: 0.5s all;
@@ -1864,7 +1863,7 @@ ul.social-icons li a.lin:hover i {
 }
 
 .footer-bottom p a {
-  color: #f2d701;
+  color: #ff5722;
   text-decoration: none;
 }
 
@@ -2041,14 +2040,10 @@ section.socialul li {
     letter-spacing: 3px;
   }
   .layer p {
-    letter-spacing: 8px;
     margin: 6px 0;
   }
   .slide-1, .slide-2, .slide-3, .slide-4 {
     min-height: 679px;
-  }
-  .navbar {
-    bottom: 1em;
   }
   h1.subheading-agileits-w3layouts {
     font-size: 2.3em;
@@ -2298,9 +2293,6 @@ section.socialul li {
     font-size: 2.1em;
     letter-spacing: 2px;
   }
-  .layer p {
-    letter-spacing: 6px;
-  }
   .banner-info-w3layouts:before {
     height: 156px;
   }
@@ -2309,9 +2301,6 @@ section.socialul li {
   }
   .slide-1, .slide-2, .slide-3, .slide-4 {
     min-height: 480px;
-  }
-  .navbar {
-    bottom: 0.5em;
   }
   .logo-agileits {
     top: 21%;
@@ -2505,9 +2494,6 @@ section.socialul li {
   .navbar-default .navbar-nav>li>a {
     padding: 6px 15px
   }
-  .navbar {
-    bottom: 0em;
-  }
   .team {
     padding-left: 1.5em !important;
     padding-right: 1.5em !important;
@@ -2579,7 +2565,7 @@ section.socialul li {
     background-color: #fff;
   }
   .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #f2d701;
+    background-color: #ff5722;
   }
   .navbar-default .navbar-toggle {
     border-color: #fff;
@@ -2644,7 +2630,7 @@ section.socialul li {
     padding: 0.8em 0em 0.6em 0.8em;
     width: 33%;
     float: left;
-    border-bottom: 3px solid #fd6900;
+    border-bottom: 3px solid #ff5722;
     border-left: none;
   }
   .banner-top-w3-agile ul li:nth-child(1), .banner-top-w3-agile ul li:nth-child(2), .banner-top-w3-agile ul li:nth-child(4) {
@@ -2781,7 +2767,6 @@ section.socialul li {
     font-size: 1.8em;
   }
   .layer p {
-    letter-spacing: 9px;
     font-size: 13px;
   }
   .banner-info-w3layouts:before {
@@ -3066,9 +3051,6 @@ section.socialul li {
   .navbar-toggle {
     margin-left: 44%;
   }
-  .layer p {
-    letter-spacing: 7px;
-  }
   h1.subheading-agileits-w3layouts {
     line-height: 41px;
   }
@@ -3172,9 +3154,6 @@ section.socialul li {
 @media(max-width:320px) {
   .layer h3, .layer p, .bnr-butn-w3ls {
     padding-left: 11% !important;
-  }
-  .layer p {
-    letter-spacing: 5px;
   }
   .navbar-toggle {
     margin-left: 42%;

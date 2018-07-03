@@ -1,6 +1,35 @@
+*:focus {
+  outline: none !important;
+}
+
 .icon {
   margin-top: 3em;
   zoom: 0.35;
+}
+
+ul.social-icons li a, #toTop, button {
+  -webkit-transition: .25s cubic-bezier(0.18, 0.89, 0.32, 1.28) !important;
+     -moz-transition: .25s cubic-bezier(0.18, 0.89, 0.32, 1.28) !important;
+      -ms-transition: .25s cubic-bezier(0.18, 0.89, 0.32, 1.28) !important;
+       -o-transition: .25s cubic-bezier(0.18, 0.89, 0.32, 1.28) !important;
+          transition: .25s cubic-bezier(0.18, 0.89, 0.32, 1.28) !important;
+}
+
+ul.social-icons li a:hover, #toTop:hover, button:hover {
+  -webkit-transform: scale(1.5);
+     -moz-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+       -o-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+ul.social-icons li a:active, #toTop:active, button:active {
+  opacity: .75;
+  -webkit-transform: scale(.75);
+     -moz-transform: scale(.75);
+      -ms-transform: scale(.75);
+       -o-transform: scale(.75);
+          transform: scale(.75);
 }
 
 .sevices-w3layouts-grids {
@@ -10,7 +39,11 @@
 }
 
 .sevices-w3layouts-grids:hover {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+      -ms-box-shadow: none;
+       -o-box-shadow: none;
+          box-shadow: none;
   background-color: rgba(0, 0, 0, .1);
 }
 
@@ -37,24 +70,33 @@
 }
 
 .video {
-    float: left;
-    margin: 10px 15px;
-    height: 185px;
-    transition: .25s ease-in-out;
+  float: left;
+  margin: 10px 12px;
+  height: 185px;
+  -webkit-transition: .25s ease-in-out;
+     -moz-transition: .25s ease-in-out;
+      -ms-transition: .25s ease-in-out;
+       -o-transition: .25s ease-in-out;
+          transition: .25s ease-in-out;
 }
 
 .video:hover {
-    transform: scale(1.15);
-    box-shadow: 0 0 0 5px red, 0 5px 20px 10px black;
+  -webkit-transform: scale(1.15);
+     -moz-transform: scale(1.15);
+      -ms-transform: scale(1.15);
+       -o-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-box-shadow: 0 0 0 5px red, 0 5px 20px 10px black;
+     -moz-box-shadow: 0 0 0 5px red, 0 5px 20px 10px black;
+      -ms-box-shadow: 0 0 0 5px red, 0 5px 20px 10px black;
+       -o-box-shadow: 0 0 0 5px red, 0 5px 20px 10px black;
+          box-shadow: 0 0 0 5px red, 0 5px 20px 10px black;
 }
 
 @media screen and (max-width: 1024px) {
   .video {
     margin: 5px 7px;
   }
-}
-
-@media screen and (max-width: 1024px) {
   iframe {
     width: 283px;
   }
