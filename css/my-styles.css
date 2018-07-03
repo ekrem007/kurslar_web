@@ -38,14 +38,18 @@
 
 .video {
     float: left;
-    margin: 5px 2px;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin: 10px 15px;
+    height: 185px;
+    transition: .25s ease-in-out;
+}
+
+.video:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 0 5px red, 0 5px 20px 10px black;
 }
 
 @media screen and (max-width: 1024px) {
   .video {
-    padding: 0;
     margin: 5px 7px;
   }
 }
@@ -58,15 +62,14 @@
 
 @media screen and (max-width: 991px) {
   .video {
-    padding: 0;
-    margin: 5px 2px;
+    margin: 2px 2px;
     width: 49%;
   }
 }
 
 @media screen and (max-width: 568px) {
   iframe, .video {
-    width: 100%;
-    padding: 0;
+    margin: 5px 0;
+    width: 100%
   }
 }
