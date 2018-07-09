@@ -36,7 +36,6 @@ input[type="button"], input[type="submit"] {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-weight: 600;
 }
 
 p {
@@ -110,13 +109,25 @@ label {
 
 .navbar {
   position: fixed;
-  z-index: 99999;
+  z-index: 2000;
   width: 100%;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(66, 66, 66, .75);
   min-height: 0;
   border: none;
   border-radius: 0;
   height: 40px;
+  transition: .25s ease;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.navbar:hover {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    transform-origin: top;
+    box-shadow: 0 5px 15px 5px rgba(0, 0, 0, .5);
+    background-color: #424242;
 }
 
 .navbar-right {
@@ -153,6 +164,7 @@ label {
   font-size: 16px;
   letter-spacing: 2px;
   text-transform: capitalize;
+  padding-left: 40px;
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
@@ -169,6 +181,21 @@ label {
   list-style: none;
   display: inline-block;
   margin: 0;
+  border-radius: 50px;
+  -webkit-transition: .5s;
+     -moz-transition: .5s;
+      -ms-transition: .5s;
+       -o-transition: .5s;
+          transition: .5s;
+}
+
+.navbar:hover li {
+  box-shadow: inset 0 0 0 20px #424242;
+}
+
+.hover-effect li:hover, .hover-effect li:focus {
+    box-shadow: inset 0 0 0 0px #424242;
+    background-color: #FF5722;
 }
 
 .hover-effect a:hover, .hover-effect a:focus {
@@ -185,105 +212,12 @@ label {
   position: relative;
 }
 
-.hover-effect li:before, .hover-effect li:after {
-  display: block;
-  -webkit-transform: translateY(100%);
-  transform: translateY(100%);
-}
-
-.hover-effect li:before {
-  left: 0%;
-}
-
-.hover-effect li:after {
-  left: 50%;
-}
-
 .hover-effect a {
   backface-visibility: hidden;
   display: block;
   position: relative;
   text-align: center;
   text-decoration: none;
-}
-
-.hover-effect a:before, .hover-effect a:after {
-  -webkit-transform: translateY(-100%);
-  transform: translateY(-100%);
-}
-
-.hover-effect a:before {
-  left: 25%;
-}
-
-.hover-effect a:after {
-  left: 75%;
-}
-
-.hover-effect a:hover {
-  color: #000;
-  font-weight: 500;
-}
-
-.hover-effect li:before, .hover-effect li:after, .hover-effect a:before, .hover-effect a:after {
-  background-color: #ff5722;
-  position: absolute;
-  height: 100%;
-  width: 26%;
-  top: 0;
-  content: '';
-  z-index: -1;
-  opacity: 0;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  /*--w3layouts--*/
-  /*--agileits--*/
-}
-
-.hover-effect li:before {
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
-}
-
-.hover-effect li:after {
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s;
-}
-
-.hover-effect a:before {
-  -webkit-transition-delay: 0.05s;
-  transition-delay: 0.05s;
-}
-
-.hover-effect a:after {
-  -webkit-transition-delay: 0.15s;
-  transition-delay: 0.15s;
-}
-
-.hover-effect li:hover:before, .hover-effect li.current:before, .hover-effect li:hover:after, .hover-effect li.current:after, .hover-effect li:hover a:before, .hover-effect li.current a:before, .hover-effect li:hover a:after, .hover-effect li.current a:after {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-}
-
-.hover-effect li:hover:before, .hover-effect li.current:before {
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
-}
-
-.hover-effect li:hover:after, .hover-effect li.current:after {
-  -webkit-transition-delay: 0.15s;
-  transition-delay: 0.15s;
-}
-
-.hover-effect li:hover a:before, .hover-effect li.current a:before {
-  -webkit-transition-delay: 0.075s;
-  transition-delay: 0.075s;
-}
-
-.hover-effect li:hover a:after, .hover-effect li.current a:after {
-  -webkit-transition-delay: 0.225s;
-  transition-delay: 0.225s;
 }
 
 /*--w3layouts--*/
@@ -335,22 +269,26 @@ label {
 }
 
 .slide-1 {
-  background: url(../images/slide-5.jpg) no-repeat 0px 0px;
+  background: url(../images/slide-1.jpg) no-repeat 0px 0px;
 }
 
 .slide-2 {
-  background: url(../images/slide-6.jpg) no-repeat 0px 0px;
+  background: url(../images/slide-2.jpg) no-repeat 0px 0px;
 }
 
 .slide-3 {
-  background: url(../images/slide-7.jpg) no-repeat 0px 0px;
+  background: url(../images/slide-3.jpg) no-repeat 0px 0px;
 }
 
 .slide-4 {
-  background: url(../images/slide-8.jpg) no-repeat 0px 0px;
+  background: url(../images/slide-4.jpg) no-repeat 0px 0px;
 }
 
-.slide-1, .slide-2, .slide-3, .slide-4 {
+.slide-5 {
+  background: url(../images/slide-5.jpg) no-repeat 0px 0px;
+}
+
+.slide-1, .slide-2, .slide-3, .slide-4 , .slide-5 {
   background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -360,7 +298,7 @@ label {
 }
 
 a.callbacks_nav {
-  display: none;
+  background: transparent url(../images/arrow.svg) no-repeat center;
   position: absolute;
   top: 59%;
   right: 9.5%;
@@ -371,18 +309,18 @@ a.callbacks_nav {
 }
 
 a.callbacks_nav.callbacks1_nav.prev {
-  /*background: transparent url(../images/arr1.png) no-repeat 0px 0px;*/
-  right: 16%;
+  left: 4%;
   height: 32px;
   width: 32px;
-  display: none;
+  filter: invert(1);
+  transform: rotateY(180deg);
 }
 
 .callbacks_nav.next {
-  /*background: transparent url(../images/arr1.png) no-repeat 0px 0px;*/
-  right: 11%;
+  right: 4%;
   height: 32px;
   width: 32px;
+  filter: invert(1);
 }
 
 ul.callbacks_tabs {
@@ -1301,7 +1239,7 @@ li.nbs-flexisel-item img {
 /*--testimonials--*/
 
 .clients-left {
-  background: #2196f3;
+  background: linear-gradient(to right, #2196f3, #ff5722 95%);
   padding: 5em 13em 5em 13em;
 }
 
@@ -1354,12 +1292,12 @@ li.flex-active-slide p:after {
 }
 
 .clients-right {
-  background: url(../images/client.jpg) no-repeat 0px 0px;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  -ms-background-size: cover;
-  -moz-background-size: cover;
+  background: url(../images/client.png) repeat center;
+  background-size: contain;
+  -webkit-background-size: contain;
+  -o-background-size: contain;
+  -ms-background-size: contain;
+  -moz-background-size: contain;
   min-height: 506px;
 }
 
@@ -2042,7 +1980,7 @@ section.socialul li {
   .layer p {
     margin: 6px 0;
   }
-  .slide-1, .slide-2, .slide-3, .slide-4 {
+  .slide-1, .slide-2, .slide-3, .slide-4, .slide-5 {
     min-height: 679px;
   }
   h1.subheading-agileits-w3layouts {
@@ -2139,7 +2077,7 @@ section.socialul li {
   .banner-info-w3layouts:after {
     height: 160px;
   }
-  .slide-1, .slide-2, .slide-3, .slide-4 {
+  .slide-1, .slide-2, .slide-3, .slide-4 , .slide-5 {
     min-height: 600px;
   }
   .banner-btm-wthree p {
@@ -2299,7 +2237,7 @@ section.socialul li {
   .banner-info-w3layouts:after {
     height: 156px;
   }
-  .slide-1, .slide-2, .slide-3, .slide-4 {
+  .slide-1, .slide-2, .slide-3, .slide-4, .slide-5 {
     min-height: 480px;
   }
   .logo-agileits {
@@ -2491,9 +2429,6 @@ section.socialul li {
   .layer h3, .layer p, .bnr-butn-w3ls {
     padding-left: 9.5% !important;
   }
-  .navbar-default .navbar-nav>li>a {
-    padding: 6px 15px
-  }
   .team {
     padding-left: 1.5em !important;
     padding-right: 1.5em !important;
@@ -2582,7 +2517,7 @@ section.socialul li {
   .banner-info-w3layouts {
     top: 53%;
   }
-  .slide-1, .slide-2, .slide-3, .slide-4 {
+  .slide-1, .slide-2, .slide-3, .slide-4, .slide-5 {
     min-height: 440px;
   }
   a.callbacks_nav {
@@ -2783,7 +2718,7 @@ section.socialul li {
   a.callbacks_nav {
     top: 65%;
   }
-  .slide-1, .slide-2, .slide-3, .slide-4 {
+  .slide-1, .slide-2, .slide-3, .slide-4, .slide-5 {
     min-height: 410px;
   }
   .navbar-toggle {
@@ -2840,10 +2775,10 @@ section.socialul li {
     font-size: 16.5px;
     line-height: 15px;
   }
-  .slide-1, .slide-2, .slide-3, .slide-4 {
+  .slide-1, .slide-2, .slide-3, .slide-4, .slide-5 {
     min-height: 395px;
   }
-  .slide-1, .slide-2, .slide-3, .slide-4 {
+  .slide-1, .slide-2, .slide-3, .slide-4, .slide-5 {
     min-height: 395px;
   }
   .banner-info-w3layouts {
@@ -3091,7 +3026,7 @@ section.socialul li {
   .banner-top-w3-agile ul li:nth-child(2), .banner-top-w3-agile ul li:nth-child(4) {
     margin-right: 0%;
   }
-  .slide-1, .slide-2, .slide-3, .slide-4 {
+  .slide-1, .slide-2, .slide-3, .slide-4 , .slide-5 {
     min-height: 455px;
   }
   .banner-info-w3layouts {
