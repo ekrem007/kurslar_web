@@ -17,6 +17,10 @@ h2>a>i.material-icons {
     transform: translateY(15%);
 }
 
+#about, #gallery {
+  background: url(/images/a3.jpg) fixed;
+}
+
 .navbar-nav>li>a>i.material-icons {
     position: absolute;
     left: 0;
